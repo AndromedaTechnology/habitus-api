@@ -1,0 +1,19 @@
+{
+    "version": "2.0.2",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "lib": ["es5", "es6"],
+        "strict": true,
+        "target": "es6",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "include": ["./src/**/*"],
+    "exclude": [
+        "node_modules",
+        "tests/**/*"
+    ]
+}
