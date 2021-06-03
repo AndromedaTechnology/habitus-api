@@ -20,7 +20,7 @@ Anonymous and Open-Source.
 - Koa.js
 - Database: MongoDB: Mongoose
 - Config: Dotenv & Joi
-- Testing: Jest
+- Testing: Jest: MongoDBMemoryServer
 - Docker: MongoDB
 
 ## Run
@@ -44,6 +44,10 @@ docker-compose up -d
 ```
 
 ## Tests
+
+Using `Jest` Testing Framework.
+
+Jest uses `SuperTest` and `MongoDBMemoryServer`.
 
 ```
 npm run test
