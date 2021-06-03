@@ -19,8 +19,8 @@ Anonymous and Open-Source.
 - TypeScript
 - Koa.js
 - Database: MongoDB: Mongoose
-- Config: Dotenv & Joi
-- Testing: Jest: MongoDBMemoryServer
+- Config: Dotenv, Joi
+- Testing: Jest: SuperTest, MongoDBMemoryServer
 - Docker: MongoDB
 
 ## Run
