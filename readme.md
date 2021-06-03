@@ -25,14 +25,6 @@ Anonymous and Open-Source.
 
 ## Run
 
-**Application**
-
-```
-cp .env.example .env
-npm i
-npm run start
-```
-
 **Docker**
 
 Runs `MongoDB` container.
@@ -41,6 +33,14 @@ Runs `MongoDB` container.
 cd docker
 cp .env.example .env
 docker-compose up -d
+```
+
+**Application**
+
+```
+cp .env.example .env
+npm i
+npm run start
 ```
 
 ## Tests
