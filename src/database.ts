@@ -10,8 +10,12 @@ async function databaseSetup(): Promise<Mongoose> {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
-  mongoConnection.connection.on("error", console.error);
   return mongoConnection;
 }
+
+mongoose.connection.on("error", console.error);
+mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB.');
+});
 
 export { mongoConnection, databaseSetup };
