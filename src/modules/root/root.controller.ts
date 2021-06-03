@@ -1,8 +1,11 @@
+import { RouterContext } from "koa-router";
+
+import rootService from "./root.service";
+
 class RootController {
-  findAll() {
-    return {
-      msg: "Hello",
-    };
+  async findAll(ctx: RouterContext) {
+    ctx.body = await rootService.findAll();
+    return ctx;
   }
 }
 

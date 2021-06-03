@@ -1,11 +1,3 @@
-import Router from "koa-router";
-
-import controller from "./root.controller";
-
-const router = new Router();
-router.get("/", async (ctx, next) => {
-  ctx.body = controller.findAll();
-  await next();
-});
+import router from './root.routes';
 
 export default router;

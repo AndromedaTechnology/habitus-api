@@ -22,8 +22,8 @@ afterAll(async () => {
   return Promise.resolve();
 });
 
-describe("routes", () => {
-  it("root", async () => {
+describe("root.routes", () => {
+  it("returns Hello on /", async () => {
     const response = await request.get("/");
     expect(response.status).toEqual(200);
     expect(response.type).toEqual("application/json");
