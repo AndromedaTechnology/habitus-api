@@ -3,8 +3,10 @@ import supertest from "supertest";
 import { Mongoose } from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
+import config from '../../config';
 import { app } from "../../index";
 import { databaseSetup } from '../../database';
+import authService from '../auth/auth.service';
 
 // Server
 let server: Server;
@@ -14,6 +16,9 @@ let request: supertest.SuperAgentTest;
 let mongoMemoryServer: MongoMemoryServer;
 let mongoConnection: Mongoose;
 
+// Token
+let token: string;
+
 beforeAll(async () => {
   // Server
   server = app.listen();
@@ -22,6 +27,8 @@ beforeAll(async () => {
   // Database
   mongoMemoryServer = new MongoMemoryServer();
   mongoConnection = await databaseSetup(await mongoMemoryServer.getUri());
+
+  token = authService.getToken(config.admin_password);
 
   return Promise.resolve();
 });
@@ -45,9 +52,11 @@ const responseType = "application/json";
 
 describe("habit.routes", () => {
   it("create", async () => {
-    const response = await request.post("/habits").send({
-      name: itemName
-    });
+    const response = await request.post("/habits")
+      .set("Authorization", `Bearer ${token}`)
+      .send({
+        name: itemName
+      });
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -77,9 +86,11 @@ describe("habit.routes", () => {
   });
 
   it("update", async () => {
-    const response = await request.patch(`/habits/${itemId}`).send({
-      name: itemNameUpdated
-    });
+    const response = await request.patch(`/habits/${itemId}`)
+      .set("Authorization", `Bearer ${token}`)
+      .send({
+        name: itemNameUpdated
+      });
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -89,7 +100,8 @@ describe("habit.routes", () => {
   });
 
   it("delete", async () => {
-    const response = await request.delete(`/habits/${itemId}`);
+    const response = await request.delete(`/habits/${itemId}`)
+      .set("Authorization", `Bearer ${token}`);
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);

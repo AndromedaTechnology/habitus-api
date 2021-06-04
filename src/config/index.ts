@@ -12,6 +12,10 @@ const envSchema = Joi.object()
     // APP
     APP_ENV: Joi.string().optional().default("local"),
     APP_PORT: Joi.number().optional().default(8080),
+    APP_SECRET: Joi.string().optional().default("secret"),
+
+    // Admin
+    ADMIN_PASSWORD: Joi.string().optional().default("secret"),
 
     // DB
     DB_HOST: Joi.string().optional().default("localhost"),
@@ -39,6 +43,8 @@ if (error) {
 export interface IConfig {
   app_env: string;
   app_port: number;
+  app_secret: string;
+  admin_password: string;
   db_uri: string;
 }
 
@@ -49,6 +55,8 @@ const db_uri = `mongodb://${db_uri_auth}${envVars.DB_HOST}:${envVars.DB_PORT}/${
 const config: IConfig = {
   app_env: envVars.APP_ENV,
   app_port: envVars.APP_PORT,
+  app_secret: envVars.APP_SECRET,
+  admin_password: envVars.ADMIN_PASSWORD,
   db_uri,
 };
 export default config;

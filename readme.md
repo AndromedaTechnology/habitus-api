@@ -23,10 +23,6 @@ Anonymous and Open-Source.
 - Testing: Jest: SuperTest, MongoDBMemoryServer
 - Docker: MongoDB
 
-## Postman
-
-Check out [Postman Documentation](https://documenter.getpostman.com/view/97483/TzY4faNK).
-
 ## Run
 
 **Docker**
@@ -42,6 +38,8 @@ docker-compose up -d
 **Application**
 
 ```
+# Return to root
+cd ..
 cp .env.example .env
 npm i
 npm run start
@@ -57,7 +55,50 @@ Jest uses `SuperTest` and `MongoDBMemoryServer`.
 npm run test
 ```
 
+## Postman
+
+Check out [Postman Documentation](https://documenter.getpostman.com/view/97483/TzY4faNK).
+
+Pre-set environment variables:
+
+- `host`
+- `admin_password`
+
+Dynamic environment variables,
+automatically set in tests:
+
+- `access_token`
+- `habit_id`
+
+## Protected Routes [Admin access]
+
+Few routes are protected with `jwtCheck` middleware.
+
+Requests going to these routes require `Authorization: Bearer {token}` header.
+
+**Protected Routes**
+
+- Habit [Create,Update,Delete]
+
+**Getting access token**
+
+Endpoint: `POST /auth/token`.
+
+Body: `{ password: ADMIN_PASSWORD }`.
+
+**Admin password**
+
+`ADMIN_PASSWORD` is defined in `.env` file.
+
+It defaults to `secret`.
+
+
 ## Frontend
 
 - [GUI (habitus.today)](https://habitus.today)
 - [GitHub](https://github.com/AndromedaTechnology/habitus)
+
+## Powered by
+
+- Contributors
+- [Andromeda Technology](https://andromeda.technology)
