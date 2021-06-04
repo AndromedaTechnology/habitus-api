@@ -23,6 +23,12 @@ Anonymous and Open-Source.
 - Testing: Jest: SuperTest, MongoDBMemoryServer
 - Docker: MongoDB
 
+## Features
+
+- Emotion CRUD
+- Habit CRUD
+- JWT auth for Admin actions
+
 ## Run
 
 **Docker**
