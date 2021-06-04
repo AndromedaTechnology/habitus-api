@@ -7,14 +7,14 @@ import BodyParser from "koa-bodyparser";
 import router from "./modules";
 
 const app = new Koa();
-app.use(Json());
-app.use(Logger());
-app.use(BodyParser());
-app.use(router());
 app.use(
   Cors({
     origin: "*",
   })
 );
+app.use(Json());
+app.use(Logger());
+app.use(BodyParser());
+app.use(router());
 
 export default app;
