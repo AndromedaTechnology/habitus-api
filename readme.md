@@ -23,6 +23,10 @@ Anonymous and Open-Source.
 - Testing: Jest: SuperTest, MongoDBMemoryServer
 - Docker: MongoDB
 
+## Postman
+
+Check out [Postman Documentation](https://documenter.getpostman.com/view/97483/TzY4faNK).
+
 ## Run
 
 **Docker**
