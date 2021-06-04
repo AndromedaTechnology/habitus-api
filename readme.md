@@ -78,7 +78,7 @@ Requests going to these routes require `Authorization: Bearer {token}` header.
 
 **Protected Routes**
 
-- Habit [Create,Update,Delete]
+- [Emotion,Habit][Create,Update,Delete]
 
 **Getting access token**
 
