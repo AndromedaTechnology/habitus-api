@@ -52,7 +52,7 @@ const responseType = "application/json";
 
 describe("emotion.routes", () => {
   it("create", async () => {
-    const response = await request.post("/emotions")
+    const response = await request.post(config.api_prefix + "/emotions")
       .set("Authorization", `Bearer ${token}`)
       .send({
         name: itemName
@@ -68,7 +68,7 @@ describe("emotion.routes", () => {
   });
 
   it("findAll", async () => {
-    const response = await request.get("/emotions");
+    const response = await request.get(config.api_prefix + "/emotions");
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -77,7 +77,7 @@ describe("emotion.routes", () => {
   });
 
   it("find", async () => {
-    const response = await request.get(`/emotions/${itemId}`);
+    const response = await request.get(config.api_prefix + `/emotions/${itemId}`);
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -86,7 +86,7 @@ describe("emotion.routes", () => {
   });
 
   it("update", async () => {
-    const response = await request.patch(`/emotions/${itemId}`)
+    const response = await request.patch(config.api_prefix + `/emotions/${itemId}`)
       .set("Authorization", `Bearer ${token}`)
       .send({
         name: itemNameUpdated
@@ -100,7 +100,7 @@ describe("emotion.routes", () => {
   });
 
   it("delete", async () => {
-    const response = await request.delete(`/emotions/${itemId}`)
+    const response = await request.delete(config.api_prefix + `/emotions/${itemId}`)
       .set("Authorization", `Bearer ${token}`);
 
     expect(response.status).toEqual(200);

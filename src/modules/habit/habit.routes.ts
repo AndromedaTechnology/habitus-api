@@ -1,12 +1,13 @@
 import Router from "koa-router";
 
+import config from "../../config";
 import controller from "./habit.controller";
 import jwtCheck from '../../middlewares/jwtCheck';
 
 const HABIT_ROUTES_PREFIX = "/habits";
 
 const router = new Router();
-router.prefix(HABIT_ROUTES_PREFIX);
+router.prefix(config.api_prefix + HABIT_ROUTES_PREFIX);
 router.get("/", controller.findAll);
 router.get("/:id", controller.find);
 router.post("/", jwtCheck, controller.create);

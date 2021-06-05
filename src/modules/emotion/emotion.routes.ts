@@ -1,12 +1,13 @@
 import Router from "koa-router";
 
+import config from "../../config";
 import controller from "./emotion.controller";
 import jwtCheck from '../../middlewares/jwtCheck';
 
 const ROUTES_PREFIX = "/emotions";
 
 const router = new Router();
-router.prefix(ROUTES_PREFIX);
+router.prefix(config.api_prefix + ROUTES_PREFIX);
 router.get("/", controller.findAll);
 router.get("/:id", controller.find);
 router.post("/", jwtCheck, controller.create);

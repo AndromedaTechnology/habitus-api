@@ -3,6 +3,7 @@ import supertest from "supertest";
 import { Mongoose } from 'mongoose';
 
 import { app } from "../../index";
+import config from '../../config';
 import { databaseSetup } from '../../database';
 
 let server: Server;
@@ -24,7 +25,7 @@ afterAll(async () => {
 
 describe("root.routes", () => {
   it("returns Hello on /", async () => {
-    const response = await request.get("/");
+    const response = await request.get(config.api_prefix + "/");
     expect(response.status).toEqual(200);
     expect(response.type).toEqual("application/json");
     expect(response.body.msg).toEqual("Hello");

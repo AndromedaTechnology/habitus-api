@@ -52,7 +52,7 @@ const responseType = "application/json";
 
 describe("habit.routes", () => {
   it("create", async () => {
-    const response = await request.post("/habits")
+    const response = await request.post(config.api_prefix + "/habits")
       .set("Authorization", `Bearer ${token}`)
       .send({
         name: itemName
@@ -68,7 +68,7 @@ describe("habit.routes", () => {
   });
 
   it("findAll", async () => {
-    const response = await request.get("/habits");
+    const response = await request.get(config.api_prefix + "/habits");
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -77,7 +77,7 @@ describe("habit.routes", () => {
   });
 
   it("find", async () => {
-    const response = await request.get(`/habits/${itemId}`);
+    const response = await request.get(config.api_prefix + `/habits/${itemId}`);
 
     expect(response.status).toEqual(200);
     expect(response.type).toEqual(responseType);
@@ -86,7 +86,7 @@ describe("habit.routes", () => {
   });
 
   it("update", async () => {
-    const response = await request.patch(`/habits/${itemId}`)
+    const response = await request.patch(config.api_prefix + `/habits/${itemId}`)
       .set("Authorization", `Bearer ${token}`)
       .send({
         name: itemNameUpdated
@@ -100,7 +100,7 @@ describe("habit.routes", () => {
   });
 
   it("delete", async () => {
-    const response = await request.delete(`/habits/${itemId}`)
+    const response = await request.delete(config.api_prefix + `/habits/${itemId}`)
       .set("Authorization", `Bearer ${token}`);
 
     expect(response.status).toEqual(200);

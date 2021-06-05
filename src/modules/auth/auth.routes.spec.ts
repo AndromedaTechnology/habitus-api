@@ -27,7 +27,7 @@ const responseType = "application/json";
 
 describe("auth.routes", () => {
   it("token", async () => {
-    const response = await request.post("/auth/token").send({
+    const response = await request.post(config.api_prefix + "/auth/token").send({
       password: config.admin_password
     });
 
