@@ -11,7 +11,7 @@ const envSchema = Joi.object()
   .keys({
     // APP
     APP_ENV: Joi.string().optional().default("local"),
-    APP_PORT: Joi.number().optional().default(8080),
+    APP_PORT: Joi.number().optional(),
     APP_SECRET: Joi.string().optional().default("secret"),
     API_PREFIX: Joi.string().optional().default("/api"),
 
@@ -58,7 +58,7 @@ const db_uri = `mongodb://${db_uri_auth}${envVars.DB_HOST}:${envVars.DB_PORT}/${
 
 const config: IConfig = {
   app_env: envVars.APP_ENV,
-  app_port: envVars.APP_PORT,
+  app_port: envVars.APP_PORT || process.env.PORT || 8080,
   app_secret: envVars.APP_SECRET,
   api_prefix: envVars.API_PREFIX,
   admin_password: envVars.ADMIN_PASSWORD,
