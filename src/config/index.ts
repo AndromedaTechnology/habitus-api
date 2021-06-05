@@ -18,6 +18,8 @@ const envSchema = Joi.object()
     ADMIN_PASSWORD: Joi.string().optional().default("secret"),
 
     // DB
+    // If available, DB_URI is preferred over other db vars
+    DB_URI: Joi.string().optional(),
     DB_HOST: Joi.string().optional().default("localhost"),
     DB_PORT: Joi.number().optional().default(27019),
     DB_DATABASE: Joi.string().optional().default("database"),
@@ -57,6 +59,6 @@ const config: IConfig = {
   app_port: envVars.APP_PORT,
   app_secret: envVars.APP_SECRET,
   admin_password: envVars.ADMIN_PASSWORD,
-  db_uri,
+  db_uri: envVars.DB_URI ?? db_uri, // If available, env.DB_URI is preferred over other db vars
 };
 export default config;
