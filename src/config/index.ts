@@ -58,7 +58,7 @@ const db_uri = `mongodb://${db_uri_auth}${envVars.DB_HOST}:${envVars.DB_PORT}/${
 
 const config: IConfig = {
   app_env: envVars.APP_ENV,
-  app_port: envVars.APP_PORT || process.env.PORT || 8080,
+  app_port: process.env.PORT || envVars.APP_PORT || 8080,
   app_secret: envVars.APP_SECRET,
   api_prefix: envVars.API_PREFIX,
   admin_password: envVars.ADMIN_PASSWORD,
