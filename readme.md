@@ -99,10 +99,15 @@ Body: `{ password: ADMIN_PASSWORD }`.
 It defaults to `secret`.
 
 
-## Frontend
+## Habitus Frontend
 
-- [GUI (habitus.today)](https://habitus.today)
-- [GitHub](https://github.com/AndromedaTechnology/habitus)
+Written in `TypeScript`,
+
+using `Vue.js` and `Vuetify`.
+
+Join the open-source development [here](https://github.com/AndromedaTechnology/habitus).
+
+Check the live version at [habitus.today](https://habitus.today).
 
 ## Powered by
 
