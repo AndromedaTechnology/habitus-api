@@ -1,4 +1,5 @@
 .env
 /dist
+/app.yaml
 /coverage
 /node_modules/*
