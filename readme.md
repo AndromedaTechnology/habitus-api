@@ -3,12 +3,15 @@
   <a href="https://habitus.today"><img src="https://habitus.today/img/icons/logo.png"  alt="Habitus Logo" /></a>
   <br />
   <br />
-  <a href="https://habitus.today">Gamified Habit Tracker and Journal</a>
+  <a href="https://habitus.today">Gamified Tracker and Journal - Emotions, Habits, Thoughts</a>
   <br />
-  <a href="https://habitus.today">https://habitus.today</a>
+  <a href="https://habitus.today">habitus.today</a>
+  <br />
+  <br />
+  <a href="https://habitus.today"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Habitus Heroku" /></a>
 </p>
 
-API for **Habitus App**.
+API for [**Habitus App**](https://habitus.today) ([Github - Frontend](https://github.com/AndromedaTechnology/habitus)).
 
 **Habitus App** is Unobtrusive and Easy to use Habit tracker.
 
@@ -84,7 +87,7 @@ Requests going to these routes require `Authorization: Bearer {token}` header.
 
 **Protected Routes**
 
-- [Emotion,Habit][Create,Update,Delete]
+- [Emotion,Habit][create,update,delete]
 
 **Getting access token**
 
@@ -98,7 +101,6 @@ Body: `{ password: ADMIN_PASSWORD }`.
 
 It defaults to `secret`.
 
-
 ## Habitus Frontend
 
 Written in `TypeScript`,
@@ -109,7 +111,15 @@ Join the open-source development [here](https://github.com/AndromedaTechnology/h
 
 Check the live version at [habitus.today](https://habitus.today).
 
-## Powered by
+## Social
 
-- Contributors
-- [Andromeda Technology](https://andromeda.technology)
+Habitus
+
+- [Medium](https://medium.com/@habitus.today)
+- [Twitter](https://twitter.com/HabitusToday)
+
+<br/>
+<h3 align="center">
+  Crafted with ❤️ <br />
+  by contributors around the 🌍 World and <a href="https://andromeda.technology/">🌌 Andromeda</a>.
+</h3>
