@@ -17,7 +17,7 @@ API for [**Habitus App**](https://habitus.today) ([Github - Frontend](https://gi
 
 Anonymous and Open-Source.
 
-## Technology
+# 1. Technology
 
 - TypeScript
 - Koa.js
@@ -26,13 +26,13 @@ Anonymous and Open-Source.
 - Testing: Jest: SuperTest, MongoDBMemoryServer
 - Docker: MongoDB
 
-## Features
+# 2. Features
 
 - Emotion CRUD
 - Habit CRUD
 - JWT auth for Admin actions
 
-## Run
+# 3. Run
 
 **Docker**
 
@@ -54,7 +54,7 @@ npm i
 npm run dev
 ```
 
-## Tests
+# 4. Tests
 
 Using `Jest` Testing Framework.
 
@@ -64,7 +64,7 @@ Jest uses `SuperTest` and `MongoDBMemoryServer`.
 npm run test
 ```
 
-## Postman
+# 5. Postman
 
 Check out [Postman Documentation](https://documenter.getpostman.com/view/97483/TzY4faNK).
 
@@ -79,7 +79,7 @@ automatically set in tests:
 - `access_token`
 - `habit_id`
 
-## Protected Routes [Admin access]
+# 6. Protected Routes [Admin access]
 
 Few routes are protected with `jwtCheck` middleware.
 
@@ -101,17 +101,23 @@ Body: `{ password: ADMIN_PASSWORD }`.
 
 It defaults to `secret`.
 
-## Habitus Frontend
+# 7. Habitus Frontend
 
 Written in `TypeScript`,
 
 using `Vue.js` and `Vuetify`.
 
-Join the open-source development [here](https://github.com/AndromedaTechnology/habitus).
+**Join the open-source development - [Github - Habitus App - Frontend](https://github.com/AndromedaTechnology/habitus)**.
 
 Check the live version at [habitus.today](https://habitus.today).
 
-## Social
+## 7. 1. Frontend preview
+
+![User page](https://i.imgur.com/v8HgZjy.png)
+
+[Check the gallery](https://imgur.com/gallery/9X7WC6U).
+
+## 8. Social
 
 Habitus
 
