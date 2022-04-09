@@ -3,19 +3,33 @@
   <a href="https://habitus.today"><img src="https://habitus.today/img/icons/logo.png"  alt="Habitus Logo" /></a>
   <br />
   <br />
-  <a href="https://habitus.today">Gamified Tracker and Journal - Emotions, Habits, Thoughts</a>
+  <a href="https://habitus.today">Gamified Tracker and Journal</a>
   <br />
-  <a href="https://habitus.today">habitus.today</a>
+  <a href="https://habitus.today">Emotions, Habits, Thoughts</a>
   <br />
   <br />
   <a href="https://habitus.today"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Habitus Heroku" /></a>
+  <br />
+  <img src="https://badges.aleen42.com/src/node.svg" alt="Node" />
+  <img src="https://badges.aleen42.com/src/typescript.svg" alt="TypeScript" />
+  <img src="https://badges.aleen42.com/src/docker.svg" alt="Docker" />
+  <img src="https://badges.aleen42.com/src/jest_1.svg" alt="Jest" />
+  <br />
+  <a href="https://medium.com/@habitus.today"><img src="https://badges.aleen42.com/src/medium.svg" alt="Medium" /></a>
+  <a href="https://twitter.com/HabitusToday"><img src="https://badges.aleen42.com/src/twitter.svg" alt="Twitter" /></a>
+  <a href="https://www.patreon.com/moltouni"><img src="https://badges.aleen42.com/src/patreon.svg" alt="Patreon" /></a>
+  <a href="https://www.buymeacoffee.com/moltouni"><img src="https://badges.aleen42.com/src/buymeacoffee.svg" alt="Buymeacoffee" /></a>
+  <br />
+  <br />
 </p>
 
-API for [**Habitus App**](https://habitus.today) ([Github - Frontend](https://github.com/AndromedaTechnology/habitus)).
+API for [**Habitus App**](https://habitus.today) [[Github - Frontend](https://github.com/AndromedaTechnology/habitus)].
 
-**Habitus App** is Unobtrusive and Easy to use Habit tracker.
+```
+Habitus App is Unobtrusive and Easy to use Habit tracker.
 
 Anonymous and Open-Source.
+```
 
 # 1. Technology
 
