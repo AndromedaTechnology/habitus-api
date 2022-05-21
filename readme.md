@@ -8,7 +8,7 @@
   <a href="https://habitus.today">Emotions, Habits, Thoughts</a>
   <br />
   <br />
-  <a href="https://habitus.today"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Habitus Heroku" /></a>
+  <a href="https://habitus.today"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Heroku" /></a>
   <br />
   <img src="https://badges.aleen42.com/src/node.svg" alt="Node" />
   <img src="https://badges.aleen42.com/src/typescript.svg" alt="TypeScript" />
@@ -42,9 +42,10 @@ Anonymous and Open-Source.
 
 # 2. Features
 
-- Emotion CRUD
-- Habit CRUD
-- JWT auth for Admin actions
+- 🥰 Emotion CRUD
+- 💪 Habit CRUD
+- 🆕 🏷 Tag CRUD
+- 🔐 JWT auth for Admin actions
 
 # 3. Run
 
@@ -131,7 +132,7 @@ Check the live version at [habitus.today](https://habitus.today).
 
 [Check the gallery](https://imgur.com/gallery/9X7WC6U).
 
-## 8. Social
+# 8. Social
 
 Habitus
 
