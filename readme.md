@@ -1,14 +1,14 @@
 <h1 align="center">Habitus API - Healthiest version of you</h1>
 <p align="center">
-  <a href="https://habitus.today"><img src="https://habitus.today/img/icons/logo.png"  alt="Habitus Logo" /></a>
+  <a href="https://gethabitus.com"><img src="https://gethabitus.com/img/icons/logo.png"  alt="Habitus Logo" /></a>
   <br />
   <br />
-  <a href="https://habitus.today">Gamified Tracker and Journal</a>
+  <a href="https://gethabitus.com">Gamified Tracker and Journal</a>
   <br />
-  <a href="https://habitus.today">Emotions, Habits, Thoughts</a>
+  <a href="https://gethabitus.com">Emotions, Habits, Thoughts</a>
   <br />
   <br />
-  <a href="https://habitus.today"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Heroku" /></a>
+  <a href="https://gethabitus.com"><img src="https://heroku-badge.herokuapp.com/?app=habitus-api&style=flat&svg=1&root=api"  alt="Heroku" /></a>
   <br />
   <img src="https://badges.aleen42.com/src/node.svg" alt="Node" />
   <img src="https://badges.aleen42.com/src/typescript.svg" alt="TypeScript" />
@@ -23,7 +23,7 @@
   <br />
 </p>
 
-API for [**Habitus App**](https://habitus.today) [[Github - Frontend](https://github.com/AndromedaTechnology/habitus)].
+API for [**Habitus App**](https://gethabitus.com) [[Github - Frontend](https://github.com/AndromedaTechnology/habitus)].
 
 ```
 Habitus App is Unobtrusive and Easy to use Habit tracker.
@@ -124,13 +124,11 @@ using `Vue.js` and `Vuetify`.
 
 **Join the open-source development - [Github - Habitus App - Frontend](https://github.com/AndromedaTechnology/habitus)**.
 
-Check the live version at [habitus.today](https://habitus.today).
+Check the live version at [habitus.today](https://gethabitus.com).
 
 ## 7. 1. Frontend preview
 
-![User page](https://i.imgur.com/v8HgZjy.png)
-
-[Check the gallery](https://imgur.com/gallery/9X7WC6U).
+![User page](/public/img/preview/habitus-app-andromeda-preview.png)
 
 # 8. Social
 
